@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		0F97264B5A7104CEC37FE06A /* Pods_SDKSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E60ACA0484F4E51C4F125D0 /* Pods_SDKSample.framework */; };
 		A73F800722D9FD48007CF52A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73F800622D9FD48007CF52A /* AppDelegate.swift */; };
-		A73F800C22D9FD48007CF52A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A73F800A22D9FD48007CF52A /* Main.storyboard */; };
 		A73F800E22D9FD4A007CF52A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A73F800D22D9FD4A007CF52A /* Assets.xcassets */; };
 		A73F801122D9FD4A007CF52A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A73F800F22D9FD4A007CF52A /* LaunchScreen.storyboard */; };
-		A74813EA22D9FFC20033B9DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74813E922D9FFC20033B9DD /* ViewController.swift */; };
+		A74813EC22DA2B8B0033B9DD /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A74813EB22DA2B8B0033B9DD /* Login.storyboard */; };
+		A74813EE22DA2BA60033B9DD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74813ED22DA2BA60033B9DD /* LoginViewController.swift */; };
+		A74813F122DA2C1F0033B9DD /* MainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74813F022DA2C1F0033B9DD /* MainAssembly.swift */; };
+		A74813F422DA2C8E0033B9DD /* NSObjectExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74813F322DA2C8E0033B9DD /* NSObjectExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,11 +22,13 @@
 		95C93C5663EABB8C19A58CF1 /* Pods-SDKSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDKSample.release.xcconfig"; path = "Target Support Files/Pods-SDKSample/Pods-SDKSample.release.xcconfig"; sourceTree = "<group>"; };
 		A73F800322D9FD48007CF52A /* SDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A73F800622D9FD48007CF52A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A73F800B22D9FD48007CF52A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A73F800D22D9FD4A007CF52A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A73F801022D9FD4A007CF52A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A73F801222D9FD4A007CF52A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A74813E922D9FFC20033B9DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A74813EB22DA2B8B0033B9DD /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		A74813ED22DA2BA60033B9DD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A74813F022DA2C1F0033B9DD /* MainAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssembly.swift; sourceTree = "<group>"; };
+		A74813F322DA2C8E0033B9DD /* NSObjectExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExt.swift; sourceTree = "<group>"; };
 		DE7BBD2CBDF561F7BCB7FA60 /* Pods-SDKSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDKSample.debug.xcconfig"; path = "Target Support Files/Pods-SDKSample/Pods-SDKSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,7 +84,7 @@
 		A74813E522D9FEF50033B9DD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				A74813E922D9FFC20033B9DD /* ViewController.swift */,
+				A74813ED22DA2BA60033B9DD /* LoginViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -88,8 +92,8 @@
 		A74813E622D9FF260033B9DD /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				A73F800A22D9FD48007CF52A /* Main.storyboard */,
 				A73F800F22D9FD4A007CF52A /* LaunchScreen.storyboard */,
+				A74813EB22DA2B8B0033B9DD /* Login.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -108,8 +112,26 @@
 			children = (
 				A73F800622D9FD48007CF52A /* AppDelegate.swift */,
 				A74813E522D9FEF50033B9DD /* Controllers */,
+				A74813EF22DA2C0C0033B9DD /* Util */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		A74813EF22DA2C0C0033B9DD /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A74813F222DA2C840033B9DD /* Extensions */,
+				A74813F022DA2C1F0033B9DD /* MainAssembly.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		A74813F222DA2C840033B9DD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A74813F322DA2C8E0033B9DD /* NSObjectExt.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		EF998F79D8B4011CD15691C2 /* Frameworks */ = {
@@ -180,9 +202,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A74813EC22DA2B8B0033B9DD /* Login.storyboard in Resources */,
 				A73F801122D9FD4A007CF52A /* LaunchScreen.storyboard in Resources */,
 				A73F800E22D9FD4A007CF52A /* Assets.xcassets in Resources */,
-				A73F800C22D9FD48007CF52A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,22 +257,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A74813EA22D9FFC20033B9DD /* ViewController.swift in Sources */,
+				A74813EE22DA2BA60033B9DD /* LoginViewController.swift in Sources */,
+				A74813F422DA2C8E0033B9DD /* NSObjectExt.swift in Sources */,
 				A73F800722D9FD48007CF52A /* AppDelegate.swift in Sources */,
+				A74813F122DA2C1F0033B9DD /* MainAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A73F800A22D9FD48007CF52A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A73F800B22D9FD48007CF52A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A73F800F22D9FD4A007CF52A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -384,7 +400,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SDKSample/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SDKSample/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -402,7 +419,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SDKSample/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SDKSample/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
