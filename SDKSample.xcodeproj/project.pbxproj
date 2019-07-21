@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0F97264B5A7104CEC37FE06A /* Pods_SDKSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E60ACA0484F4E51C4F125D0 /* Pods_SDKSample.framework */; };
+		A7135EED22DF2AD70093CF99 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7135EEC22DF2AD70093CF99 /* PickerView.swift */; };
+		A7135F0F22E4739C0093CF99 /* AlertsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7135F0E22E4739C0093CF99 /* AlertsManager.swift */; };
+		A7135F1122E4745A0093CF99 /* UIApplicationExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7135F1022E4745A0093CF99 /* UIApplicationExt.swift */; };
+		A7135F1322E479750093CF99 /* Asset.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7135F1222E479750093CF99 /* Asset.storyboard */; };
+		A7135F1522E4799D0093CF99 /* AssetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7135F1422E4799D0093CF99 /* AssetViewController.swift */; };
 		A73F800722D9FD48007CF52A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73F800622D9FD48007CF52A /* AppDelegate.swift */; };
 		A73F800E22D9FD4A007CF52A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A73F800D22D9FD4A007CF52A /* Assets.xcassets */; };
 		A73F801122D9FD4A007CF52A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A73F800F22D9FD4A007CF52A /* LaunchScreen.storyboard */; };
@@ -20,6 +25,11 @@
 /* Begin PBXFileReference section */
 		0E60ACA0484F4E51C4F125D0 /* Pods_SDKSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDKSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C93C5663EABB8C19A58CF1 /* Pods-SDKSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDKSample.release.xcconfig"; path = "Target Support Files/Pods-SDKSample/Pods-SDKSample.release.xcconfig"; sourceTree = "<group>"; };
+		A7135EEC22DF2AD70093CF99 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		A7135F0E22E4739C0093CF99 /* AlertsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsManager.swift; sourceTree = "<group>"; };
+		A7135F1022E4745A0093CF99 /* UIApplicationExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExt.swift; sourceTree = "<group>"; };
+		A7135F1222E479750093CF99 /* Asset.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Asset.storyboard; sourceTree = "<group>"; };
+		A7135F1422E4799D0093CF99 /* AssetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetViewController.swift; sourceTree = "<group>"; };
 		A73F800322D9FD48007CF52A /* SDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A73F800622D9FD48007CF52A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A73F800D22D9FD4A007CF52A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +61,14 @@
 				95C93C5663EABB8C19A58CF1 /* Pods-SDKSample.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A7135EEB22DF2A850093CF99 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A7135EEC22DF2AD70093CF99 /* PickerView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		A73F7FFA22D9FD48007CF52A = {
@@ -85,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				A74813ED22DA2BA60033B9DD /* LoginViewController.swift */,
+				A7135F1422E4799D0093CF99 /* AssetViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -94,6 +113,7 @@
 			children = (
 				A73F800F22D9FD4A007CF52A /* LaunchScreen.storyboard */,
 				A74813EB22DA2B8B0033B9DD /* Login.storyboard */,
+				A7135F1222E479750093CF99 /* Asset.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -112,6 +132,7 @@
 			children = (
 				A73F800622D9FD48007CF52A /* AppDelegate.swift */,
 				A74813E522D9FEF50033B9DD /* Controllers */,
+				A7135EEB22DF2A850093CF99 /* Views */,
 				A74813EF22DA2C0C0033B9DD /* Util */,
 			);
 			path = Classes;
@@ -122,6 +143,7 @@
 			children = (
 				A74813F222DA2C840033B9DD /* Extensions */,
 				A74813F022DA2C1F0033B9DD /* MainAssembly.swift */,
+				A7135F0E22E4739C0093CF99 /* AlertsManager.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -130,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				A74813F322DA2C8E0033B9DD /* NSObjectExt.swift */,
+				A7135F1022E4745A0093CF99 /* UIApplicationExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -205,6 +228,7 @@
 				A74813EC22DA2B8B0033B9DD /* Login.storyboard in Resources */,
 				A73F801122D9FD4A007CF52A /* LaunchScreen.storyboard in Resources */,
 				A73F800E22D9FD4A007CF52A /* Assets.xcassets in Resources */,
+				A7135F1322E479750093CF99 /* Asset.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +282,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A74813EE22DA2BA60033B9DD /* LoginViewController.swift in Sources */,
+				A7135F1122E4745A0093CF99 /* UIApplicationExt.swift in Sources */,
 				A74813F422DA2C8E0033B9DD /* NSObjectExt.swift in Sources */,
+				A7135F1522E4799D0093CF99 /* AssetViewController.swift in Sources */,
+				A7135F0F22E4739C0093CF99 /* AlertsManager.swift in Sources */,
 				A73F800722D9FD48007CF52A /* AppDelegate.swift in Sources */,
+				A7135EED22DF2AD70093CF99 /* PickerView.swift in Sources */,
 				A74813F122DA2C1F0033B9DD /* MainAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

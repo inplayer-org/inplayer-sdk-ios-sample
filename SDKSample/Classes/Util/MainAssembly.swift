@@ -13,4 +13,9 @@ class MainAssembly {
         let storyboard = UIStoryboard(name: "Login", bundle: nil)
         return storyboard.instantiateViewController(withIdentifier: LoginViewController.className)
     }
+    
+    static func assetViewController() -> UIViewController {
+        let storyboard = UIStoryboard(name: "Asset", bundle: nil)
+        return storyboard.instantiateViewController(withIdentifier: AssetViewController.className)
+    }
 }
