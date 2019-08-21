@@ -16,10 +16,12 @@
 		A73F800722D9FD48007CF52A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73F800622D9FD48007CF52A /* AppDelegate.swift */; };
 		A73F800E22D9FD4A007CF52A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A73F800D22D9FD4A007CF52A /* Assets.xcassets */; };
 		A73F801122D9FD4A007CF52A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A73F800F22D9FD4A007CF52A /* LaunchScreen.storyboard */; };
+		A743460422EF0CBE0052C268 /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A743460322EF0CBE0052C268 /* IAPHelper.swift */; };
 		A74813EC22DA2B8B0033B9DD /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A74813EB22DA2B8B0033B9DD /* Login.storyboard */; };
 		A74813EE22DA2BA60033B9DD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74813ED22DA2BA60033B9DD /* LoginViewController.swift */; };
 		A74813F122DA2C1F0033B9DD /* MainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74813F022DA2C1F0033B9DD /* MainAssembly.swift */; };
 		A74813F422DA2C8E0033B9DD /* NSObjectExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74813F322DA2C8E0033B9DD /* NSObjectExt.swift */; };
+		A75BD39F230AFB6B00E711F0 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75BD39E230AFB6B00E711F0 /* StringExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,10 +37,12 @@
 		A73F800D22D9FD4A007CF52A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A73F801022D9FD4A007CF52A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A73F801222D9FD4A007CF52A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A743460322EF0CBE0052C268 /* IAPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
 		A74813EB22DA2B8B0033B9DD /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		A74813ED22DA2BA60033B9DD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A74813F022DA2C1F0033B9DD /* MainAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssembly.swift; sourceTree = "<group>"; };
 		A74813F322DA2C8E0033B9DD /* NSObjectExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExt.swift; sourceTree = "<group>"; };
+		A75BD39E230AFB6B00E711F0 /* StringExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
 		DE7BBD2CBDF561F7BCB7FA60 /* Pods-SDKSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDKSample.debug.xcconfig"; path = "Target Support Files/Pods-SDKSample/Pods-SDKSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,6 +145,7 @@
 		A74813EF22DA2C0C0033B9DD /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				A743460322EF0CBE0052C268 /* IAPHelper.swift */,
 				A74813F222DA2C840033B9DD /* Extensions */,
 				A74813F022DA2C1F0033B9DD /* MainAssembly.swift */,
 				A7135F0E22E4739C0093CF99 /* AlertsManager.swift */,
@@ -151,6 +156,7 @@
 		A74813F222DA2C840033B9DD /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A75BD39E230AFB6B00E711F0 /* StringExt.swift */,
 				A74813F322DA2C8E0033B9DD /* NSObjectExt.swift */,
 				A7135F1022E4745A0093CF99 /* UIApplicationExt.swift */,
 			);
@@ -285,6 +291,8 @@
 				A7135F1122E4745A0093CF99 /* UIApplicationExt.swift in Sources */,
 				A74813F422DA2C8E0033B9DD /* NSObjectExt.swift in Sources */,
 				A7135F1522E4799D0093CF99 /* AssetViewController.swift in Sources */,
+				A75BD39F230AFB6B00E711F0 /* StringExt.swift in Sources */,
+				A743460422EF0CBE0052C268 /* IAPHelper.swift in Sources */,
 				A7135F0F22E4739C0093CF99 /* AlertsManager.swift in Sources */,
 				A73F800722D9FD48007CF52A /* AppDelegate.swift in Sources */,
 				A7135EED22DF2AD70093CF99 /* PickerView.swift in Sources */,
@@ -428,13 +436,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2A78X24QFZ;
 				INFOPLIST_FILE = "$(SRCROOT)/SDKSample/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.inplayer.SDKSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inplayer.InPlayerInAppDev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -447,13 +456,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2A78X24QFZ;
 				INFOPLIST_FILE = "$(SRCROOT)/SDKSample/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.inplayer.SDKSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inplayer.InPlayerInAppDev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
