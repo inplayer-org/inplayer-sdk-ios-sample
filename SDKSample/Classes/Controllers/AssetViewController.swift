@@ -18,6 +18,8 @@ class AssetViewController: UIViewController {
     private var iapHelper: IAPHelper?
     private var product: SKProduct?
     
+    private var assetID: Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // register for purchase notification
@@ -29,7 +31,7 @@ class AssetViewController: UIViewController {
         if let assetIdString = assetIDField.text,
             let assetID = assetIdString.intValue,
             let feeIdString = assetFeeIDField.text {
-            
+            self.assetID = assetID
             InPlayer.Asset.checkAccessForAsset(id: assetID, success: { (itemAccess) in
                 // show some info
             }) { (error) in
@@ -49,8 +51,15 @@ class AssetViewController: UIViewController {
     private func buyProduct(identifier: String) {
         
         func validatePurchase(identifier: String, receipt: String) {
-            InPlayer.Payment.validate(receiptString: receipt, productIdentifier: identifier, success: {
-                
+            InPlayer.Payment.validate(receiptString: receipt,
+                                      productIdentifier: identifier,
+                                      success: {
+                                        print("success")
+                InPlayer.Asset.checkAccessForAsset(id: self.assetID!, success: { (itemAccess) in
+                    print(itemAccess)
+                }, failure: { (error) in
+                    self.showError(message: error.message)
+                })
             }) { (error) in
                 self.showError(message: error.message)
             }
@@ -86,7 +95,7 @@ class AssetViewController: UIViewController {
     }
     
     private func showError(message: String?) {
-        
+        print(message)
     }
     
     private func showInfo() {
